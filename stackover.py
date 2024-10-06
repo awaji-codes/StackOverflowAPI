@@ -5,3 +5,5 @@ response = requests.get('http://api.stackexchange.com/2.2/questions?order=desc&s
 
 for data in response.json()['items']:
     print(data['title'])
+    print(data['link'])
+    print()
